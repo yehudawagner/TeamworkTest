@@ -18,8 +18,9 @@ public class TaskListPage extends AbstractTaskPage{
 	box = driver.findElement(By.id("TaskLists"));
 	return new AddTaskPage(driver, box);
 }
-	public Boolean verifyExsistance(String task_name){
-		return !driver.findElements(By.xpath("//a[text='" + task_name + "']")).isEmpty();
+	@Override
+	public Boolean verifyExist(String task_name){
+		return !driver.findElements(By.xpath("//*[text()='" + task_name + "']")).isEmpty();
 	}
 
 }

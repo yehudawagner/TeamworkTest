@@ -9,7 +9,7 @@ public class AbstractTaskPage extends AbstractTeamWorkPage{
 		super(driver);
 	}
 	public Boolean verifyExist(String list_name) {
-		return !driver.findElements(By.xpath("//a[@title='vovavov']")).isEmpty();
+		return !driver.findElements(By.xpath("//a[@title='"+list_name+"']")).isEmpty();
 	}
 
 }

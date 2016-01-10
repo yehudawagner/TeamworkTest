@@ -41,7 +41,7 @@ public class TeamWorkTest {
 		usr_login_name = properties.getProperty("usr_login_name");
 		usr_name = properties.getProperty("usr_name");
 		password = properties.getProperty("password");
-		list_name = properties.getProperty("list_name");
+		list_name = properties.getProperty("list_name")+System.currentTimeMillis();
 		task_name = properties.getProperty("task_name");
 		task_name2 = properties.getProperty("task_name2");
 		topq_page = properties.getProperty("topq_page");
